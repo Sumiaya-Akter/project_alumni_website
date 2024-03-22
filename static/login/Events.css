@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-size: 10 px;
+    font-weight: 400;
+    font-family: lato, Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+    background-image: url('/static/images/events.jpg');
+    background-size: cover;
+}
+
+/*change*/
+.icon {
+    background-color: rgb(41, 121, 121);
+    height: 100px;
+    width: auto;
+    text-align: center;
+}
+
+
+/*change*/
+.event .header-text {
+    padding: 10px;
+}
+
+.event .header-text h2 {
+    font-size: 20px;
+    text-align: left;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+
+.box {
+    width: 90%;
+    height: auto;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #ccb9b3, #e89352, #75441e);
+
+    justify-content: center;
+}
+.event .event-content {
+    margin: 2rem 1.2rem;
+    width: 60rem;
+    position: relative;
+}
+
+
+.event .context-text {
+    width: 38rem;
+    padding: 2.5rem;
+    box-shadow: 0 6rem 4 rem gray;
+    background: white;
+    position: absolute;
+    top: 3 rem;
+    right: 4rem;
+}
+
+.context-text .event-menu h4 {
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.context-text .event-menu h4 ::after {
+    content: " ";
+    display: block;
+    width: 16rem;
+    height: 4px;
+    background: hsl(207, 4%, 43%);
+}
+
+.event-menu .event-detail {
+    font-size: 50px;
+    color: #fff;
+    margin: 1.2rem 0;
+    list-style: none;
+}
+
+.event-menu .event-detail li {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: .4rem;
+}
+
+.event-menu .event-detail li i {
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.event-menu .event-detail li span {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.context-text .event-text h4 {
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #062d49;
+    letter-spacing: 2px;
+    line-height: 1.7;
+}
+
+.context-text .event-text p {
+    font-size: 5px;
+    font-weight: 400;
+}

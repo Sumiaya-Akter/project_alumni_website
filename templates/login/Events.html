@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Events
+{% endblock title %}
+
+{% block stylesheet %}
+<link rel="stylesheet" type="text/css" href="/static/login/Events.css">
+{% endblock %}
+
+{% block body %}
+<div class="container pt-5 box">
+    <div class="event">
+        <div class="event-image1">
+            <img src="/static/images/istockphoto-1327425232-170667a.jpg" align="right">
+        </div>
+        <div class="header-text">
+            <h2><b>Upcoming Events...</b></h2>
+        </div>
+        <div class="event-section">
+            <div class="event-content">
+
+                <div class="content-text">
+                    <div class="event-menu">
+                        <h3>Event 1:</h3>
+                        <h4>13 August,2022</h4>
+                        <ul class="event-detail">
+                            <li><i class="fa fa-clock-o" aria-hidden="true"></i><span>2:30pm - 5pm</span></li>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Alumni meeting</span></li>
+                        </ul>
+                    </div>
+                    <div class="event-text">
+                        <h4>Something</h4>
+                        <p>Something happens</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="event-content">
+                <div class="event-image2">
+                    <!--<img src="/static/images/index.jpg" width="500px" height="350px">-->
+
+                </div>
+                <div class="content-text">
+                    <div class="event-menu">
+                        <h3>Event 2:</h3>
+                        <h4>20 August,2022</h4>
+                        <ul class="event-detail">
+                            <li><i class="fa fa-clock-o" aria-hidden="true"></i><span>4pm - 5pm</span></li>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Alumni meeting..</span></li>
+                        </ul>
+                    </div>
+                    <div class="event-text">
+                        <h4>Something..</h4>
+                        <p>Something happens..</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock body %}

@@ -1,0 +1,117 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+.icon
+{
+    background-color:rgb(41, 121, 121);
+    height: 100px;
+    width: auto;
+    text-align: center;
+}
+
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image:url('/static/images/istockphoto-1311934969-170667a.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#fff;
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+   font-size: 36px;
+   font-weight: 500; 
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contact-info
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contact-info box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    
+}
+.container .contact-info box text
+{
+    display: inline;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+   
+}
+.contactform
+{
+    width: 40%;
+    height: auto;
+    padding: 40px;   
+    background-repeat: no-repeat;
+    background-image: url('/static/images/index.png') ;
+    background-size: cover;
+    color:black;
+    
+}
+/*change*/
+.menu-bar
+{
+    background-color:rgb(194, 179, 190);  
+    height:75px;
+    text-align: center;
+}
+.menu-bar ul
+{
+    display:inline-flex;
+    height: 15px;
+    list-style: none;
+    color: rgb(170, 22, 22);
+    font-size: small;
+}
+.menu-bar ul li
+{
+  width: auto;
+  margin:15px;
+  margin-top: 10px;
+  padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    width:auto;
+    font-size: medium;
+    color: rgb(209, 7, 108);
+    height: auto;
+}
+.active, .menu-bar ul li:hover
+{
+    background: #696e72;
+    font-weight:bolder;
+    height: 50px;
+}
+/*change*/

@@ -1,0 +1,78 @@
+.box {
+    width: 90%;
+    height: auto;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #b3b3cc, #7f79aa, #474779);
+
+    justify-content: center;
+}
+
+
+.input-box {
+    width: 40%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 3px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: #fff;
+
+}
+
+label {
+    display: block;
+    margin: 5px 0 5px 0;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+    height: 100%;
+    border: 1px solid gray;
+    outline: none;
+    padding: 7px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input[type=file] {
+    display: none;
+}
+
+label[for=id_image] {
+    display: none;
+}
+
+label[for=id_username] {
+    display: none;
+}
+#id_username{
+    display: none;
+}
+
+
+input[type=submit] {
+    margin: 10px 0 20px 0;
+    float: right;
+    overflow: visible;
+    background: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    letter-spacing: 3px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, .2);
+}

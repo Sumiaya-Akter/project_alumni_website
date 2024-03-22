@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.icon {
+    background-color: rgb(41, 121, 121);
+    height: auto;
+    text-align: center;
+}
+
+.nav-item {
+    padding-left: 25px !important;
+
+}
+
+.nav-link:hover {
+    font-weight: 600 !important;
+    border-bottom: 1px solid #fff !important;
+}
+
+.carousel-item {
+    height: 650px;
+}
+
+.carousel-inner img {
+    height: 90%;
+    width: 70%;
+}
+
+.nv{
+    margin-left: 370px;
+}
+
+.font-color{
+    
+    color: rgb(209, 7, 108) !important;
+}

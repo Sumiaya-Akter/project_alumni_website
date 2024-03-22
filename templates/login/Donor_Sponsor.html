@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Members
+{% endblock title %}
+
+{% block stylesheet %}
+<link rel="stylesheet" type="text/css" href="/static/login/Donor_Sponsor.css">
+{% endblock %}
+
+{% block body %}
+<div class="container" style="padding-top: 40px;">
+    <div>
+        <select id="select" onChange="onChange()">
+            <option value="all">All series</option>
+            {% for option in options %}
+            <option value="{{option}}">{{option}} series</option>
+            {% endfor %}
+        </select>
+        <form method="post">
+            {% csrf_token %}
+            <div style="display: none;">
+                {{ form }}
+            </div>
+            <input type="submit" value="Filter" id="submit">
+        </form>
+    </div>
+    <div style="display: block;
+    background: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;">Members</div>
+    <div class="grid_container">
+        {% for member in members %}
+        <div class="d-flex flex-row">
+            <div class="p-2 pr-5 pl-5 img-round"><img src="media/{{member.image}}" alt=""></div>
+            <div class="p-2">
+                <b>Name:</b> {{member.full_name}}<br>
+                <b>Jobtitle:</b> {{member.job_title}}<br>
+                <b>Location:</b> {{member.job_location}}<br>
+                <b>ID:</b> {{member.student_id}}<br>
+                <b>LinkedIn: </b><a href="{{member.linked_in}}">{{member.linked_in}}</a><br>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+<script>
+    var select = document.getElementById('select');
+    var value = select.options[select.selectedIndex].value;
+    document.getElementById("id_text").value = value;
+    function onChange() {
+        var select = document.getElementById('select');
+        var value = select.options[select.selectedIndex].value;
+        console.log(value);
+        document.getElementById("id_text").value = value;
+    }
+</script>
+
+
+{% endblock body %}
